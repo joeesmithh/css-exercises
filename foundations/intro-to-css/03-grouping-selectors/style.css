@@ -8,12 +8,8 @@
     background-color: yellow;
 }
 
-.border {
-    border-width: .2rem;
-    border-style: outset;
-}
-
-.font-normal {
-    font-family: sans-serif;
-    font-size: 32px;
+.button-first,
+.button-second {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 28px;
 }
