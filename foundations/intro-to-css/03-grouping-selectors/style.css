@@ -1,0 +1,19 @@
+.button-first {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.button-second {
+    background-color: yellow;
+}
+
+.border {
+    border-width: .2rem;
+    border-style: outset;
+}
+
+.font-normal {
+    font-family: sans-serif;
+    font-size: 32px;
+}
