@@ -1,3 +1,7 @@
+* {
+  outline: 2px solid red;
+}
+
 .header  {
   font-family: monospace;
   background: papayawhip;
