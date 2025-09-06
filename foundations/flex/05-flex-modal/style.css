@@ -1,12 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-html, body {
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
   height: 100%;
 }
 
 body {
   font-family: Roboto, sans-serif;
-  margin: 0;
   background: #aaa;
   color: #333;
   /* I'll give you this one for free lol */
@@ -19,7 +25,16 @@ body {
   background: white;
   width: 480px;
   border-radius: 10px;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.2);
+
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+}
+
+.header {
+  /* flex: 1; */
+  font-weight: 900;
 }
 
 .icon {
@@ -27,6 +42,7 @@ body {
   font-size: 26px;
   font-weight: 700;
   background: lavender;
+  min-width: 42px;
   width: 42px;
   height: 42px;
   border-radius: 50%;
@@ -35,25 +51,30 @@ body {
   justify-content: center;
 }
 
-.close-button {
-  background: #eee;
-  border-radius: 50%;
-  color: #888;
-  font-weight: 400;
-  font-size: 16px;
-  height: 24px;
-  width: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #eee;
-  padding: 0;
-}
-
 button {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
+}
+
+.top-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button.close {
+  background: #eee;
+  border-radius: 50%;
+  color: #888;
+  font-weight: 500;
+  font-size: 16px;
+  height: 24px;
+  width: 24px;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
 }
 
 button.continue {
@@ -67,3 +88,11 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
